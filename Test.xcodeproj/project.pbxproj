@@ -15,6 +15,8 @@
 		8465396E1C607C7C00DFF845 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8465396C1C607C7C00DFF845 /* LaunchScreen.storyboard */; };
 		846539791C607C7C00DFF845 /* TestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 846539781C607C7C00DFF845 /* TestTests.m */; };
 		846539841C607C7C00DFF845 /* TestUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 846539831C607C7C00DFF845 /* TestUITests.m */; };
+		846539941C607CBE00DFF845 /* EncryptUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 846539931C607CBE00DFF845 /* EncryptUtil.m */; };
+		8465399F1C6082B100DFF845 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 8465399D1C6082B100DFF845 /* GTMBase64.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,11 @@
 		8465397F1C607C7C00DFF845 /* TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		846539831C607C7C00DFF845 /* TestUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestUITests.m; sourceTree = "<group>"; };
 		846539851C607C7C00DFF845 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		846539921C607CBE00DFF845 /* EncryptUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EncryptUtil.h; sourceTree = "<group>"; };
+		846539931C607CBE00DFF845 /* EncryptUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EncryptUtil.m; sourceTree = "<group>"; };
+		8465399C1C6082B100DFF845 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		8465399D1C6082B100DFF845 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		8465399E1C6082B100DFF845 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +112,8 @@
 				846539621C607C7C00DFF845 /* AppDelegate.m */,
 				846539641C607C7C00DFF845 /* ViewController.h */,
 				846539651C607C7C00DFF845 /* ViewController.m */,
+				8465399A1C60829900DFF845 /* ThirdLibs */,
+				846539911C607C8300DFF845 /* Class */,
 				846539671C607C7C00DFF845 /* Main.storyboard */,
 				8465396A1C607C7C00DFF845 /* Assets.xcassets */,
 				8465396C1C607C7C00DFF845 /* LaunchScreen.storyboard */,
@@ -138,6 +147,33 @@
 				846539851C607C7C00DFF845 /* Info.plist */,
 			);
 			path = TestUITests;
+			sourceTree = "<group>";
+		};
+		846539911C607C8300DFF845 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				846539921C607CBE00DFF845 /* EncryptUtil.h */,
+				846539931C607CBE00DFF845 /* EncryptUtil.m */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		8465399A1C60829900DFF845 /* ThirdLibs */ = {
+			isa = PBXGroup;
+			children = (
+				8465399B1C6082B100DFF845 /* Encryption */,
+			);
+			name = ThirdLibs;
+			sourceTree = "<group>";
+		};
+		8465399B1C6082B100DFF845 /* Encryption */ = {
+			isa = PBXGroup;
+			children = (
+				8465399C1C6082B100DFF845 /* GTMBase64.h */,
+				8465399D1C6082B100DFF845 /* GTMBase64.m */,
+				8465399E1C6082B100DFF845 /* GTMDefines.h */,
+			);
+			path = Encryption;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,7 +311,9 @@
 			files = (
 				846539661C607C7C00DFF845 /* ViewController.m in Sources */,
 				846539631C607C7C00DFF845 /* AppDelegate.m in Sources */,
+				8465399F1C6082B100DFF845 /* GTMBase64.m in Sources */,
 				846539601C607C7C00DFF845 /* main.m in Sources */,
+				846539941C607CBE00DFF845 /* EncryptUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
